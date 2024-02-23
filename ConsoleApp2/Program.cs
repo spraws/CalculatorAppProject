@@ -4,44 +4,48 @@
     {
         static void Main(string[] args)
         {
-            // Declare variables
-            int no1;
-            int no2;
-            int choice;
+            UserInput input1 = new UserInput();
+            UserInput input2 = new UserInput();
 
-            Console.WriteLine("Enter a number!");
-            no1 = Convert.ToInt32(Console.ReadLine());
+            Adding add = new Adding();
+            Subtract subtract = new Subtract();
+            Multiply multiply = new Multiply();
+            Divide divison = new Divide();
 
-            Console.WriteLine("Enter another number");
-            no2 = Convert.ToInt32(Console.ReadLine());
+            string choice;
 
-            Console.WriteLine("Press 1 to add, 2 to multiply, 3 to subtract or 4 to divide");
-            choice = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter your first number");
+            input1.Number1 = Convert.ToInt32(Console.ReadLine());
 
-            if (choice == 1)
+            Console.WriteLine("Enter your second number");
+            input2.Number2 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Press 1 to add, 2 to subtract, 3 to multiply or 4 to divide");
+            choice = Console.ReadLine();
+
+            if (choice == "1")
             {
-                int value;
-                value = no1 + no2;
-                Console.WriteLine(value);
+                add.CalculateSum(input1, input2);
             }
-            if (choice == 2)
+
+            if (choice == "2")
             {
-                int value;
-                value = no1 * no2;
-                Console.WriteLine(value);
+                subtract.SubtractResult(input1, input2);
             }
-            if (choice ==3)
+
+            if (choice == "3") 
             {
-                int value;
-                value = no1 - no2;
-                Console.WriteLine(value);
+                multiply.MultiplyResult(input1, input2);
             }
-            if(choice == 4)
+
+            if (choice == "4")
             {
-                int value;
-                value = no1 / no2;
-                Console.WriteLine(value);
+                divison.DivisionResult(input1, input2);
             }
+
+
         }
+
+            
     }
 }
