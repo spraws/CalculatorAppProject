@@ -9,17 +9,17 @@ namespace ConsoleApp2
 {
     internal class UserInput
     {
-        private int no1;
-        private int no2;
+        private double no2;
+        private double no1;
 
-        public int Number1 
+        public double Number1 
         {
             get { return no1; }
             set { no1 = value; }
 
         }
 
-        public int Number2
+        public double Number2
         {
             get { return no2; }
             set { no2 = value; }

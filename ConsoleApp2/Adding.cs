@@ -12,9 +12,9 @@ namespace ConsoleApp2
 
         public void CalculateSum(UserInput pInput1, UserInput pInput2)
         {
-            int no1 = pInput1.Number1;
-            int no2 = pInput2.Number2;
-            int sum = no1 + no2;
+            double no1 = pInput1.Number1;
+            double no2 = pInput2.Number2;
+            double sum = no1 + no2;
 
             Console.WriteLine("The sum of your numbers is {0}", sum);
         }
