@@ -36,7 +36,12 @@
                 value = no1 - no2;
                 Console.WriteLine(value);
             }
-
+            if(choice == 4)
+            {
+                int value;
+                value = no1 / no2;
+                Console.WriteLine(value);
+            }
         }
     }
 }
